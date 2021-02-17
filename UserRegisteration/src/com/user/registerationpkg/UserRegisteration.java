@@ -1,17 +1,25 @@
 package com.user.registerationpkg;
-
-
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class UserRegisteration {
 	static Scanner sc= new Scanner(System.in);
 	
-	public static void matches(String reg1) {
-		Pattern p1 = Pattern.compile(reg1);
-//		Matcher m1 = p1.matcher(firstName);
-//		
-//		Matcher m1 = p1.matcher(firstName);
+	public static void validation(String firstName,String lastName,String email,String mobile,String password) {
+		
+		//To check if name starts with Capital and has min 3 characters.
+		System.out.println("Name: "+Pattern.matches("[A-Z]{1}[a-z]{3,}",firstName));
+		System.out.println("LastName: "+Pattern.matches("[A-Z]{1}[a-z]{3,}",lastName));
+		
+		//Checks email pattern.
+		System.out.println("Email: "+Pattern.matches("[a-zA-Z0-9_.]+@[a-zA-Z.a-zA-Z{2,}.a-zA-Z{2,}]+$",email));
+		
+		//Checks mobile number.
+		System.out.println("Mobile No: "+Pattern.matches("^[9][1]\\s[6789]{1}[0-9]{9}$",mobile));
+
+		//Checks password.
+		System.out.println("Password : "+Pattern.matches("[A-Za-z]{8,}$",password));
+			
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -27,18 +35,9 @@ public class UserRegisteration {
 		String mobile=sc.next(); 
 		System.out.println("\nEnter your Password : ");
 		String password=sc.next(); 
-		//To check if name starts with Capital and has min 3 characters.
-		System.out.println("Name: "+Pattern.matches("[A-Z]{1}[a-z]{3,}",firstName));
-		System.out.println("LastName: "+Pattern.matches("[A-Z]{1}[a-z]{3,}",lastName));
 		
-		//Checks email pattern.
-		System.out.println("Email: "+Pattern.matches("[abc.a-zA-Z]+@[bl.co.a-zA-Z]+$",email));
-		
-		//Checks mobile number.
-		System.out.println("Mobile No: "+Pattern.matches("[91]{2}\s[6789]{1}[0-9]{9}",mobile));
-
-		//Checks password.
-		System.out.println("Password : "+Pattern.matches("[a-zA-Z]{8,}",password));
-
-	}
+		//Method to validate input data.
+		validation(firstName,lastName,email,mobile,password);
+		}
 }
+
