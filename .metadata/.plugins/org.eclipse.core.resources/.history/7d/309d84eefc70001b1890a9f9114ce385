@@ -34,7 +34,7 @@ public class UserRegisteration {
 		System.out.println("Email: "+Pattern.matches("[abc.a-zA-Z]+@[bl.co.a-zA-Z]+$",email));
 		
 		//Checks mobile number.
-		System.out.println("Mobile No: "+Pattern.matches("[91]{2}\s[6789]{1}[0-9]{9}",mobile));
-
+		System.out.println("Mobile No: "+Pattern.matches("[789][0-9]{9}",mobile));
+//		[91]{2}\s[6789]{1}[0-9]{9}
 	}
 }
