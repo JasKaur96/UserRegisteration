@@ -5,8 +5,7 @@ import java.util.regex.Pattern;
 public class UserRegisteration {
 	static Scanner sc= new Scanner(System.in);
 	
-	public static void validation(String firstName,String lastName,String email,String mobile,String password) {
-		
+	public static void validation(String firstName) {
 		//To check if name starts with Capital and has min 3 characters.
 		System.out.println("Name: "+Pattern.matches("[A-Z]{1}[a-z]{3,}",firstName));
 	}
