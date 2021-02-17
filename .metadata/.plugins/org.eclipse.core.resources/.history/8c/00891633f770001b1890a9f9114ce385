@@ -8,12 +8,6 @@ import java.util.regex.Pattern;
 public class UserRegisteration {
 	static Scanner sc= new Scanner(System.in);
 	
-	public static void matches(String reg1) {
-		Pattern p1 = Pattern.compile(reg1);
-//		Matcher m1 = p1.matcher(firstName);
-//		
-//		Matcher m1 = p1.matcher(firstName);
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("\n*****Welocme To User Registeration*****");
