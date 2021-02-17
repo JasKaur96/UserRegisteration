@@ -1,7 +1,7 @@
 package com.user.registerationpkg;
 import java.util.Scanner;
 import java.util.regex.Pattern;
-
+ 
 public class UserRegisteration {
 	static Scanner sc= new Scanner(System.in);
 	
