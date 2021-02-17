@@ -38,7 +38,7 @@ public class UserRegisteration {
 		System.out.println("Mobile No: "+Pattern.matches("[91]{2}\s[6789]{1}[0-9]{9}",mobile));
 
 		//Checks password.
-		System.out.println("Password : "+Pattern.matches("^(?=.*[A-Z][a-z]){8,}$",password));
+		System.out.println("Password : "+Pattern.matches("[a-z][A-Z]){8,}",password));
 
 	}
 }
