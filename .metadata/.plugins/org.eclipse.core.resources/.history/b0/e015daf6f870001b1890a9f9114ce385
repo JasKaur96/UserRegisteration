@@ -23,9 +23,15 @@ public class UserRegisteration {
 		String lastName=sc.next(); 
 		System.out.println("\nEnter your Email : ");
 		String email=sc.next(); 
-		
 		//To check if name starts with Capital and has min 3 characters.
-		System.out.println("Name: "+Pattern.matches("[A-Z]{1}[a-z]{3,}",firstName));
-		System.out.println("LastName: "+Pattern.matches("[A-Z]{1}[a-z]{3,}",lastName));
+//		String reg1="[A-Z]{1}[a-z]{3,}";
+//		Pattern p1 = Pattern.compile(reg1);
+//		Matcher m1 = p1.matcher(firstName);
+//		Matcher m2 = p1.matcher(lastName);
+		System.out.println("First Name:");
+		System.out.println("Last Name:");
+		
+		System.out.println(Pattern.matches("[A-Z]{1}[a-z]{3,}",firstName));
+		System.out.println(Pattern.matches("[A-Z]{1}[a-z]{3,}",lastName));
 	}
 }
