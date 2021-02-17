@@ -15,7 +15,6 @@ public class UserRegisteration {
 		System.out.println("\nEnter your name : ");
 		String firstName=sc.next(); 
 		
-		//To check if name starts with Capital and has min 3 characters.
 		String reg1="[A-Z]{1}[a-z]{3,}";
 		Pattern p1 = Pattern.compile(reg1);
 		Matcher m = p1.matcher(firstName);
