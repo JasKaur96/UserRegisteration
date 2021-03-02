@@ -50,8 +50,8 @@ public class ValidEmailTest {
     }
     @Test
     public void checkEmailValidity() throws UserRegistrationException {
-        UserRegisteration person = new UserRegisteration();
+        UserRegisteration user = new UserRegisteration();
         System.out.println("Email: "+expectedResult);
-        Assert.assertEquals(expectedResult, person.validateEmail(email));
+        Assert.assertEquals(expectedResult, user.validateEmail(email));
     }
 }
